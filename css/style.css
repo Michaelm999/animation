@@ -1,0 +1,42 @@
+.gameplay {
+  visibility: hidden;
+}
+
+.moving {
+    animation-duration: 3s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    background:#98bf21;
+    height:100px;
+    width:200px;
+}
+
+@keyframes moving {
+    from {
+        top: 5%;
+    }
+    to {
+        top: 95%;
+    }  
+}
+.moving-up {
+    animation-duration: 3s;
+    animation-name: moving-up;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    background:#98bf21;
+    height:100px;
+    width:200px;
+}
+
+@keyframes moving-up {
+    from {
+        top: 95%;
+    }
+    to {
+        top: 5%;
+    }  
+}

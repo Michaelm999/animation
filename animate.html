@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var score = 0
+$(document).ready(function(){
+    $("button").click(function(){
+    $('.gameplay').css({'visibility': 'visible'})
+    setTimeout(function(){
+    alert("Your score is "+score)}, 30000)
+  });
+});
+
+$(document).ready(function(){
+    $(".moving").click(function(){
+      score+=1;
+      console.log(score);
+    });
+    $(".moving-up").click(function(){
+      score+=1;
+      console.log(score);
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Start Animation</button>
+<div class="gameplay">
+<div class="moving">HIT ME!</div>
+<div class="moving-up" style="left:250px">NO! HIT ME!</div>
+<div class="moving" style="left:500px">PLEASE BE GENTLE!</div>
+</div>
+</body>
+</html>
