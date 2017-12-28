@@ -1,8 +1,28 @@
+body {
+  background-color: #10db10;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;
+}
+.start p {
+  font-size: 23px;
+}
+button {
+  text-align: center;
+  font-size: 17px;
+}
+.start {
+  text-align: center;
+}
 .gameplay {
+  text-align: center;
   visibility: hidden;
+  background-color: white;
 }
 .scoreboard {
   visibility: hidden;
+  text-align: center;
 }
 .moving {
     animation-duration: 3s;
@@ -10,11 +30,14 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     position: absolute;
-    background:#98bf21;
+    background: white;
     height:100px;
     width:200px;
 }
-
+#pscore{
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+}
 @keyframes moving {
     from {
         top: 5%;
@@ -29,7 +52,7 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     position: absolute;
-    background:#98bf21;
+    background: white;
     height:100px;
     width:200px;
 }
