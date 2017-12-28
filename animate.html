@@ -9,7 +9,9 @@ $(document).ready(function(){
     $("button").click(function(){
     $('.gameplay').css({'visibility': 'visible'})
     setTimeout(function(){
-    alert("Your score is "+score)}, 30000)
+      $('.gameplay').css({'visibility': 'hidden'})
+      $('.scoreboard').css({'visibility': 'visible'})
+      document.querySelector('#pscore').innerHTML = "Your score is "+ score}, 30000)
   });
 });
 
@@ -33,5 +35,10 @@ $(document).ready(function(){
 <div class="moving-up" style="left:250px">NO! HIT ME!</div>
 <div class="moving" style="left:500px">PLEASE BE GENTLE!</div>
 </div>
+
+<div class="scoreboard">
+  <p id="pscore"></p>
+</div>
+
 </body>
 </html>

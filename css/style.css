@@ -1,7 +1,9 @@
 .gameplay {
   visibility: hidden;
 }
-
+.scoreboard {
+  visibility: hidden;
+}
 .moving {
     animation-duration: 3s;
     animation-name: moving;
@@ -19,7 +21,7 @@
     }
     to {
         top: 95%;
-    }  
+    }
 }
 .moving-up {
     animation-duration: 3s;
@@ -38,5 +40,5 @@
     }
     to {
         top: 5%;
-    }  
+    }
 }
