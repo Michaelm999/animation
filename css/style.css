@@ -18,14 +18,13 @@ button {
 .gameplay {
   text-align: center;
   visibility: hidden;
-  background-color: white;
 }
 .scoreboard {
   visibility: hidden;
   text-align: center;
 }
 .moving {
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-name: moving;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -35,8 +34,9 @@ button {
     width:200px;
 }
 #pscore{
-  font-size: 22px;
+  font-size: 44px;
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 12px;
 }
 @keyframes moving {
     from {
@@ -47,8 +47,18 @@ button {
     }
 }
 .moving-up {
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-name: moving-up;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    background: white;
+    height:100px;
+    width:200px;
+}
+.moving-down {
+    animation-duration: 1.5s;
+    animation-name: moving;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     position: absolute;
